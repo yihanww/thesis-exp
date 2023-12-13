@@ -1,0 +1,132 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+#attritionAnswer {
+  max-width: 700px;
+  margin: auto;
+}
+
+.max-size {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+p.instructions {
+  min-width: 400px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.custom-control-label::before,
+.custom-control-label::after {
+  top: 0.375rem;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.instructions-image {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  /* min-width: 300px;
+  max-width: 600px; */
+}
+
+.jspsych-content {
+  width: 95vw;
+}
+
+#jspsych-loading-progress-bar-container {
+  margin: auto;
+}
+
+.slider {
+  -webkit-appearance: none;
+  display: block;
+  margin: 0 auto;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  font-size: 0px;
+  /*Needed to prevent FireFox from diplaying weird grey line. */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #2c3e50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #2c3e50;
+  cursor: pointer;
+}
+
+.slider.not-clicked::-webkit-slider-thumb {
+  opacity: 0;
+  cursor: default;
+}
+
+.slider.not-clicked::-moz-range-thumb {
+  opacity: 0;
+  cursor: default;
+}
+
+.invis {
+  visibility: hidden;
+}
+
+.not-displayed {
+  display: none;
+}
+
+.error {
+  color: #bd2130;
+}
+
+label.error {
+  background-color: #ffd2d2;
+  border-radius: 0.25rem;
+  color: #d8000c;
+  margin: 5px auto;
+  padding: 5px;
+  width: 100%;
+}
+
+label.error:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: 400;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f057";
+}
+
+/* Fix BsMultiSelect close button */
+.badge>.close {
+  color: black;
+  padding: 1px 2px 1px 2px;
+}
