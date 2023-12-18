@@ -123,6 +123,7 @@ async function generateTrials() {
   shuffle(block1);
   shuffle(block2);
   shuffle(block3);
+  shuffle(repeatPics);
   let finalPictures = [...block1, ...block2, ...block3, ...repeatPics];
 
   return generateRatingTrials({
