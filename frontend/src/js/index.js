@@ -126,7 +126,7 @@ async function generateTrials() {
   shuffle(repeatPics);
   let finalPictures = [...block1, ...block2, ...block3, ...repeatPics];
 
-  return generateRatingTrials({
+  const ratingTrials = generateRatingTrials({
     type: image_slider_response.info.name,
     stimuli: finalPictures,
     stimulus_width,
@@ -140,7 +140,8 @@ async function generateTrials() {
     experiment_phase: "main",
     post_trial_gap: intertrial_interval,
   });
-}
+  return ratingTrials.slice(0,2);
+} 
 
   runExperiment({
     debug_mode,
