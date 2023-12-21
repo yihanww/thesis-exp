@@ -46,8 +46,8 @@ export default async function runExperiment({
   experiment_title,
   version_date,
   intertrial_interval, // in ms
-  estimated_task_duration = "15 minutes",
-  compensation = "$2.50", // in dollars
+  estimated_task_duration = "20 minutes",
+  compensation = "$3.00", // in dollars
   completion_code = generateCompletionCode("exa", "mple"),
   continue_button_name = "continueButton",
   consent_radio_button_name = "consentRadioButton",

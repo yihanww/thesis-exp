@@ -109,11 +109,11 @@ class ExperimentConfiguration(SQLModel):
     start_time: Optional[datetime]
     end_time: Optional[datetime]
     debug_mode: bool = False
-    estimated_task_duration: str = "15 minutes"
-    compensation: str = "$2.50"
-    experiment_title: str = "Example experiment"
-    experiment_name: str = "example_experiment"
-    version_date: str = "2023-10-21"
+    estimated_task_duration: str = "20 minutes"
+    compensation: str = "$3.00"
+    experiment_title: str = "Thesis experiment"
+    experiment_name: str = "thesis_experiment"
+    version_date: str = "2023-12-20"
     open_tags: str = "[["
     close_tags: str = "]]"
     stimulus_width: int = 400

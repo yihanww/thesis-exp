@@ -140,7 +140,7 @@ async function generateTrials() {
     experiment_phase: "main",
     post_trial_gap: intertrial_interval,
   });
-  return ratingTrials.slice(0,2);
+  return ratingTrials.slice(0,150);
 } 
 
   runExperiment({
