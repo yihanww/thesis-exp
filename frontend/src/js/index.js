@@ -55,7 +55,7 @@ import "../css/index.css";
     num_stimuli
   } = configuration_info;
 
-
+  const {redirect_url} = env;
 
 
   // * Constants
@@ -161,5 +161,6 @@ async function generateTrials() {
     estimated_task_duration, // str: in min
     completion_code,
     generateTrials,
+    redirect_url
   });
 })();
